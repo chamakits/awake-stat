@@ -1,28 +1,28 @@
 {
-  "name": "awake-stat",
-  "productName": "Awake Stat",
-  "version": "0.1.0",
-  "description": "",
-  "license": "MIT",
-  "repository": "user/repo",
-  "author": {
-    "name": "cham akits",
-    "email": "ext+dev@doinggeneric.work",
-    "url": ""
-  },
-  "scripts": {
-    "build": "tsc && npm run dist-cpApp",
-    "run": "node",
-    "dist-cpApp": "copyfiles app/**/*.png app/**/*.html app/**/*.css dist"
-  },
-  "dependencies": {
-    "@types/node": "^8.0.20",
-    "ip": "^1.1.5",
-    "mailgun-js": "^0.12.1",
-    "pretty-bytes": "^4.0.2"
-  },
-  "devDependencies": {
-    "copyfiles": "^1.2.0",
-    "typescript": "^2.4.2"
-  }
+    "name": "awake-stat",
+    "productName": "Awake Stat",
+    "version": "0.1.0",
+    "description": "",
+    "license": "MIT",
+    "repository": "user/repo",
+    "author": {
+        "name": "cham akits",
+        "email": "ext+dev@doinggeneric.work",
+        "url": ""
+    },
+    "scripts": {
+        "build": "tsc && npm run dist-cpApp",
+        "run": "node dist/app/index.js",
+        "dist-cpApp": "copyfiles app/**/*.png app/**/*.html app/**/*.css dist"
+    },
+    "dependencies": {
+        "@types/node": "^8.0.20",
+        "ip": "^1.1.5",
+        "mailgun-js": "^0.12.1",
+        "pretty-bytes": "^4.0.2"
+    },
+    "devDependencies": {
+        "copyfiles": "^1.2.0",
+        "typescript": "^2.4.2"
+    }
 }
