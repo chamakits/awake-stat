@@ -4,6 +4,7 @@ import * as prettyBytes from 'pretty-bytes';
 
 export interface Stats {
     ip?: string;
+    hostname?: string;
     cpu?: CpuInfo;
     memory?: any;
     load?: number[];
@@ -25,6 +26,7 @@ export function getStat(): Stats {
     var stats: Stats = {};
 
     stats.ip = ip.address();
+    stats.hostname = os.hostname();
     var cpus = os.cpus();
     stats.cpu = {
         count: cpus.length,
