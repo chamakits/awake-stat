@@ -18,6 +18,7 @@
   "dependencies": {
     "@types/node": "^8.0.20",
     "ip": "^1.1.5",
+    "mailgun-js": "^0.12.1",
     "pretty-bytes": "^4.0.2"
   },
   "devDependencies": {
