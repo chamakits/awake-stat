@@ -13,6 +13,7 @@
     "scripts": {
         "build": "tsc && npm run dist-cpApp",
         "run": "node dist/app/index.js",
+        "runAll": "node dist/app/index.js",
         "dist-cpApp": "copyfiles app/**/*.png app/**/*.html app/**/*.css dist"
     },
     "dependencies": {
