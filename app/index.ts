@@ -17,7 +17,7 @@ var mailGunInit = mailgun(mailInit);
 var data = {
     from: privateInfo.mailgun.from_email,
     to: privateInfo.mail.to,
-    subject: "Current stats",
+    subject: "Current stats for " + statsInfo.hostname,
     text: statsString
 }
 
